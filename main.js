@@ -1,12 +1,19 @@
 console.log(`欢迎来到 Electron 👋`);
-
-const { app, BrowserWindow } = require("electron");
+const path = require("path");
+const { app, BrowserWindow, ipcMain } = require("electron");
+require("./main/ipcHandler");
 
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, "main/preload.js"),
+    },
   });
+
+  // 注册一个
+  // ipcMain.handle("ping", () => "pong");
 
   win.loadFile("index.html");
 };
