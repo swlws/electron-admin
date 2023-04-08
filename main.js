@@ -15,7 +15,14 @@ const createWindow = () => {
   // 注册一个
   // ipcMain.handle("ping", () => "pong");
 
+  // 直接加载本地UI
   win.loadFile("index.html");
+  // 也可以加载远程地址的网页
+  // win.loadURL("https://github.com");
+
+  // 打开浏览器的调试窗口
+  // 也可以使用组合键【command + option + i】打开
+  // win.webContents.openDevTools();
 };
 
 app.whenReady().then(() => {

@@ -29,3 +29,11 @@
 ```bash
 > npm run make
 ```
+
+# 页面调试
+
+```js
+// 打开浏览器的调试窗口
+// 也可以使用组合键【command + option + i】打开
+win.webContents.openDevTools();
+```

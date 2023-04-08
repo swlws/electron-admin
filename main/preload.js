@@ -9,4 +9,5 @@ contextBridge.exposeInMainWorld("versions", {
   // IPC通信
   // 向渲染进程暴露一个ping接口
   ping: () => ipcRenderer.invoke("ping"),
+  selectFile: () => ipcRenderer.invoke("selectFile"),
 });

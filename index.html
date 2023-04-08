@@ -12,15 +12,19 @@
       content="default-src 'self'; script-src 'self'"
     />
     <title>Hello from Electron renderer!</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
+    <h5>Hello from Electron renderer! 👋👋👋</h5>
 
-    <h1>来自操作系统的数据</h1>
+    <h5>来自操作系统的数据</h5>
     <p id="os"></p>
 
-    <h1>IPC通信</h1>
+    <div>
+      <button id="btn">打开文件夹</button>
+    </div>
+
+    <h5>IPC通信</h5>
     <p id="ipc"></p>
     <script src="./views/render.js"></script>
   </body>
