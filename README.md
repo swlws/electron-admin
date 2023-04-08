@@ -1,2 +1,3 @@
 # electron-admin
-learning
+
+简单 electron 的简单实现
