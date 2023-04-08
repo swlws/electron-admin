@@ -1,0 +1,14 @@
+{
+  "name": "electron-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ui:dev": "pnpm --filter ui dev",
+    "main:dev": "pnpm --filter main start ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
