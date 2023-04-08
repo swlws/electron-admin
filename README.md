@@ -1,12 +1,12 @@
 # electron-admin
 
-# Base 分之
+# Base 分支
 
-base 分之：完整的从 0 到一的 Demo
+base 分支：完整的从 0 到一的 Demo
 
-# Master 分之
+# Master 分支
 
-master 分之，使用`electron forge`创建
+master 分支，使用`electron forge`创建
 
 ```bash
 # 启动
