@@ -23,16 +23,16 @@ const createWindow = () => {
   //   mainWindow.loadURL(MAIN_WINDOW_VITE_DEV_SERVER_URL);
   // }
   if (process.env.npm_lifecycle_script === "electron-forge start") {
-    // mainWindow.loadURL("http://localhost:3000/");
     mainWindow.loadURL("http://localhost:3000/");
   } else {
+    // mainWindow.loadURL("http://localhost:3000/");
     mainWindow.loadFile(
       path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`)
     );
   }
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished
